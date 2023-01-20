@@ -77,4 +77,4 @@ who participated in this project.
 
 ## 🎉 License <a name = "license"></a>
 
-Code released under the [MIT License](LICENSE.txt).
+Code released under the [MIT License](LICENSE).
