@@ -25,16 +25,12 @@
 
 you can randomize anything with one package. We have provided randomizers like `string`, `number`, `hexColor`, `emoji`, `id`, `otp`, `password`, `serialId` and others
 
-<br />
-
 ## 💉 Installation <a name = "installation"></a>
 
 
 ```bash
 npm i prandom
 ```
-
-<br />
 
 ## 🎈 Usage <a name="usage"></a>
 
@@ -71,8 +67,6 @@ randomPassword => goWtyLunEpZHfo3
 randomSerialID => aluvy-i9NfA-BPcgs-l1AxH-dJfwK-H6FlT
 */
 ```
-
-<br />
 
 ## ✍️ Authors <a name = "authors"></a>
 
