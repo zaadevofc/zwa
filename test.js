@@ -1,9 +1,9 @@
 const prandom = require('./lib')
 
-const randomString = prandom.string(55)
+const randomString = prandom.string()
 console.log('randomString =>', randomString)
 
-const randomNumber = prandom.number(6)
+const randomNumber = prandom.number()
 console.log('randomNumber =>', randomNumber)
 
 const randomHexColor = prandom.hexColor()
@@ -21,5 +21,5 @@ console.log('randomOTP =>', randomOTP)
 const randomPassword = prandom.password()
 console.log('randomPassword =>', randomPassword)
 
-const randomSerialID = prandom.serialId(30)
+const randomSerialID = prandom.serialId()
 console.log('randomSerialID =>', randomSerialID)
