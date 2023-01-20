@@ -1,6 +1,6 @@
 {
   "name": "prandom",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Complete and Varied Randomization in only one package.",
   "main": "index.js",
   "keywords": [
