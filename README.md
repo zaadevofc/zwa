@@ -38,15 +38,16 @@ how to use it is very easy, as follows :
 
 ```js
 const prandom = require('prandom');
+var length = 30
 
-const randomString = prandom.string()
-const randomNumber = prandom.number()
+const randomString = prandom.string(length)
+const randomNumber = prandom.number(length)
 const randomHexColor = prandom.hexColor()
 const randomEmoji = prandom.emoji()
-const randomID = prandom.id()
-const randomOTP = prandom.otp()
-const randomPassword = prandom.password()
-const randomSerialID = prandom.serialId()
+const randomID = prandom.id(length - 22)
+const randomOTP = prandom.otp(length - 24)
+const randomPassword = prandom.password(length - 15)
+const randomSerialID = prandom.serialId(length - 10)
 
 // and others...
 ```
