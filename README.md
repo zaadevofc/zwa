@@ -16,7 +16,7 @@
 
 ---
 
-<h1 align="center"> Complete and Varied Randomization in only one package
+<h1 align="center"> Complete and Varied Randomization in only one package.
     <br> 
     <br> 
 </h1>

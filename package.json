@@ -1,12 +1,29 @@
 {
   "name": "prandom",
   "version": "1.0.0",
-  "description": "",
+  "description": "Complete and Varied Randomization in only one package.",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "keywords": [
+    "random",
+    "random all",
+    "random string",
+    "random char",
+    "random number",
+    "random password",
+    "random hexColor",
+    "random emoji",
+    "random otp",
+    "random id",
+    "random serialId"
+  ],
+  "author": "zaadevofc",
+  "license": "MIT",
+  "homepage": "https://github.com/zaadevofc/prandom#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zaadevofc/prandom.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "bugs": {
+    "url": "https://github.com/zaadevofc/prandom/issues"
+  }
 }
