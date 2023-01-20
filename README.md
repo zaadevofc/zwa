@@ -58,7 +58,7 @@ const { string, number, hexColor, emoji, id, otp, password, serialId } = require
 ```js
 /* 
 randomString => AaFWV1FOVIx13CzJLdHNUvtaaYJbO9
-randomNumber => 384833
+randomNumber => 358734643519106301161778459502
 randomHexColor => #7afb96
 randomEmoji => 🥉
 randomID => #78422535
