@@ -1,35 +1,35 @@
 <p align="center">
   <a href="" rel="noopener">
- <img src="https://i1.sndcdn.com/avatars-000610836519-ie5ynf-t500x500.jpg" alt="Project logo"></a>
+ <img src="https://textpro.me/images/user_image/2023/01/63cc843c7e462.jpg" alt="Project logo"></a>
 </p>
 <!-- <h1 align="center">PRANDOM</h1> -->
 
 <div align="center">
 
-[![Hackathon](https://img.shields.io/badge/prandom-npm-orange.svg)](https://www.npmjs.com/package/prandom)
+[![Hackathon](https://img.shields.io/badge/textpro.me-npm-orange.svg)](https://www.npmjs.com/package/textpro.me)
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![GitHub Issues](https://img.shields.io/github/issues/zaadevofc/prandom)](https://github.com/zaadevofc/prandom/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/zaadevofc/prandom)](https://github.com/zaadevofc/prandom/pulls)
+[![GitHub Issues](https://img.shields.io/github/issues/zaadevofc/textpro.me)](https://github.com/zaadevofc/textpro.me/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/zaadevofc/textpro.me)](https://github.com/zaadevofc/textpro.me/pulls)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.md)
 
 </div>
 
 ---
 
-<h1 align="center"> Complete and Varied Randomization in only one package.
+<h1 align="center"> Textpro.me Scrape
     <br> 
     <br> 
 </h1>
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
-you can randomize anything with one package. We have provided randomizers like `string`, `number`, `hexColor`, `emoji`, `id`, `otp`, `password`, `serialId` and others
+You can use textpro.me only through the package. Simple and Fast.
 
 ## 💉 Installation <a name = "installation"></a>
 
 
 ```bash
-npm i prandom
+npm i textpro.me
 ```
 
 ## 🎈 Usage <a name="usage"></a>
@@ -37,35 +37,27 @@ npm i prandom
 how to use it is very easy, as follows :
 
 ```js
-const prandom = require('prandom');
-var length = 30
+const textpro = require('textpro.me');
 
-const randomString = prandom.string(length)
-const randomNumber = prandom.number(length)
-const randomHexColor = prandom.hexColor()
-const randomEmoji = prandom.emoji()
-const randomID = prandom.id(length - 22)
-const randomOTP = prandom.otp(length - 24)
-const randomPassword = prandom.password(length - 15)
-const randomSerialID = prandom.serialId(length - 10)
+var url = 'https://textpro.me/pornhub-style-logo-online-generator-free-977.html';
+var text = ['textpro', 'npm'];
 
-// and others...
-```
-or
-```js
-const { string, number, hexColor, emoji, id, otp, password, serialId } = require('prandom')
+textpro.get(url, text).then(async (data) => {
+  try {
+    console.log(data)
+  } catch (err) {
+    console.log(err)
+  }
+});
 ```
 
 ```js
 /* 
-randomString => AaFWV1FOVIx13CzJLdHNUvtaaYJbO9
-randomNumber => 358734643519106301161778459502
-randomHexColor => #7afb96
-randomEmoji => 🥉
-randomID => #78422535
-randomOTP => 770860
-randomPassword => goWtyLunEpZHfo3
-randomSerialID => aluvy-i9NfA-BPcgs-l1AxH-dJfwK-H6FlT
+{
+  title: 'Pornhub Style Logo Online Generator Free',
+  path: 'https://textpro.me/pornhub-style-logo-online-generator-free-977.html',
+  result: 'https://textpro.me/images/user_image/2023/01/63cc8737301ef.jpg'
+}
 */
 ```
 
