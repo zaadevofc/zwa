@@ -1,29 +1,28 @@
 {
-  "name": "prandom",
-  "version": "1.2.0",
-  "description": "Complete and Varied Randomization in only one package.",
+  "name": "textpro.me",
+  "version": "1.1.0",
+  "description": "Scrapping textpro.me only through the package. Simple and Fast.",
   "main": "index.js",
   "keywords": [
-    "random",
-    "random all",
-    "random string",
-    "random char",
-    "random number",
-    "random password",
-    "random hexColor",
-    "random emoji",
-    "random otp",
-    "random id",
-    "random serialId"
+    "textpro.me",
+    "textpro",
+    "scrape"
   ],
   "author": "zaadevofc",
   "license": "MIT",
-  "homepage": "https://github.com/zaadevofc/prandom#readme",
+  "homepage": "https://github.com/zaadevofc/textpro.me#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zaadevofc/prandom.git"
+    "url": "git+https://github.com/zaadevofc/textpro.me.git"
   },
   "bugs": {
-    "url": "https://github.com/zaadevofc/prandom/issues"
+    "url": "https://github.com/zaadevofc/textpro.me/issues"
+  },
+  "dependencies": {
+    "axios": "^1.2.3",
+    "cheerio": "^1.0.0-rc.12",
+    "cookie": "^0.5.0",
+    "form-data": "^4.0.0",
+    "node-fetch": "^2.6.8"
   }
 }
