@@ -43,6 +43,8 @@ const connect = async () => {
     await ZWA.initial(connect) // fill with function name
 }
 
+connect()
+
 ```
 ## Event Listener
 
@@ -69,4 +71,9 @@ ZWA.on('update.status', (msg) => {
     /* .... */
 })
 ```
+
+
+## Demo
+
+![Demo](https://github.com/zaadevofc/zaadevofc/blob/5bdca1bb6eb7873b37f8485cd53447d7fc696714/doc-zwa.gif?raw=true)
 
