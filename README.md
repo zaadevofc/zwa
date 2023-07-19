@@ -90,3 +90,14 @@ ZWA.on('update.status', (msg) => {
 
 ![Demo](https://github.com/zaadevofc/zaadevofc/blob/5bdca1bb6eb7873b37f8485cd53447d7fc696714/doc-zwa.gif?raw=true)
 
+
+## Feedback
+
+If you have any feedback, please reach out to us at zaadevofc@gmail.com
+
+
+## License
+
+Copyright (c) 2022 Dominik Wilkowski.
+Licensed under the [GNU GPL-3.0-or-later](https://github.com/zaadevofc/zwa/blob/main/LICENSE).
+
