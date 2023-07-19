@@ -46,6 +46,19 @@ const connect = async () => {
 connect()
 
 ```
+## Configuration
+
+```javascript
+{
+    showLogs: true, // show a logs of some actions
+    dir: 'session', // folder path of your session
+    prefix: '/', // set prefix for use command object
+    authors: [/* 628... */], // set authors
+    banned: [/* 628... */], // set banned
+    browser: ['ZWA MD', 'Safari', '3.0.0'] // set browser to show in your connection
+}
+```
+
 ## Event Listener
 
 ```javascript
