@@ -50,5 +50,5 @@ module.exports = async (client, chats, event) => {
 
     client.ev.emit('zwa.show-logs', { event, ...obj })
 
-    return { ...obj }
+    return { ...obj } 
 }
