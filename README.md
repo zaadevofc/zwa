@@ -1,73 +1,72 @@
-<p align="center">
-  <a href="" rel="noopener">
- <img src="https://textpro.me/images/user_image/2023/01/63cc843c7e462.jpg" alt="Project logo"></a>
-</p>
-<!-- <h1 align="center">PRANDOM</h1> -->
 
-<div align="center">
+# ZWA MD - WhatsApp NodeJS
 
-[![Hackathon](https://img.shields.io/badge/textpro.me-npm-orange.svg)](https://www.npmjs.com/package/textpro.me)
-[![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![GitHub Issues](https://img.shields.io/github/issues/zaadevofc/textpro.me)](https://github.com/zaadevofc/textpro.me/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/zaadevofc/textpro.me)](https://github.com/zaadevofc/textpro.me/pulls)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.md)
+Simple package to make Whatsapp bot Light and Fast! This is a replacement for the removed [@adiwajshing/baileys](https://github.com/adiwajshing/baileys) library. and now this package uses the library from [@whiskeysockets/baileys](https://github.com/WhiskeySockets/Baileys) then I make it easier and I break it down so that everyone can easily make WhatsApp Bot.
 
-</div>
 
----
+## Installation
 
-<h1 align="center"> Textpro.me Scrape
-    <br> 
-    <br> 
-</h1>
-
-## 🏁 Getting Started <a name = "getting_started"></a>
-
-You can use textpro.me only through the package. Simple and Fast.
-
-## 💉 Installation <a name = "installation"></a>
-
+Install `zwa` in your project :
 
 ```bash
-npm i textpro.me
+  npm install zwa
+```
+```bash
+  yarn add zwa
+```
+    
+## Running Tests
+
+To run tests, run the following command :
+
+```bash
+  git clone https://github.com/zaadevofc/zwa
+  cd zwa
+  npm install
+  npm run test
 ```
 
-## 🎈 Usage <a name="usage"></a>
 
-how to use it is very easy, as follows :
+## Usage
 
-```js
-const textpro = require('textpro.me');
+initial configuration that needs to be considered when running it.
+```javascript
+const { Connection, Config } = require('zwa')
 
-var url = 'https://textpro.me/pornhub-style-logo-online-generator-free-977.html';
-var text = ['textpro', 'npm'];
+const config = Config({
+    /*  */
+})
 
-textpro.get(url, text).then(async (data) => {
-  try {
-    console.log(data)
-  } catch (err) {
-    console.log(err)
-  }
-});
-```
-
-```js
-/* 
-{
-  title: 'Pornhub Style Logo Online Generator Free',
-  path: 'https://textpro.me/pornhub-style-logo-online-generator-free-977.html',
-  result: 'https://textpro.me/images/user_image/2023/01/63cc8737301ef.jpg'
+// must async function ...
+const connect = async () => {
+    const ZWA = new Connection({ config })
+    await ZWA.initial(connect) // fill with function name
 }
-*/
+
+```
+## Event Listener
+
+```javascript
+ZWA.on('connection', ({ status }) => {
+    // this event for actived and running the bot
+    // don't delete this event
+    // status "connecting" || "open" || "close"
+})
+
+ZWA.on('messages', (msg) => {
+    /* .... */
+})
+
+ZWA.on('messages.delete', (msg) => {
+    /* .... */
+})
+
+ZWA.on('call', (msg) => {
+    /* .... */
+})
+
+ZWA.on('update.status', (msg) => {
+    /* .... */
+})
 ```
 
-## ✍️ Authors <a name = "authors"></a>
-
-- [@zaadevofc](https://github.com/zaadevofc) - Developer
-
-See also the list of [contributors](https://github.com/zaadevofc/prandom/contributors)
-who participated in this project.
-
-## 🎉 License <a name = "license"></a>
-
-Code released under the [MIT License](LICENSE).

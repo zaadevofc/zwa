@@ -1,1 +1,5 @@
 node_modules
+session
+github
+out
+.gitignore
