@@ -4,3 +4,4 @@ github
 out
 .gitignore
 yarn.lock
+*.zip
