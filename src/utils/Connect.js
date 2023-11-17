@@ -3,7 +3,6 @@ const package = require('../../package.json');
 
 const { Boom } = require("@hapi/boom");
 const banner = require('cfonts')
-const figlet = require("figlet");
 const chalk = require('chalk')
 const qrc = require('qrcode-terminal');
 const Spinnies = require('spinnies')
@@ -55,7 +54,10 @@ module.exports = (client, module) => {
             spinAdd('con-3', 'Scan Qr with your WhatsApp ...')
         }
 
-        if (initial && isNewLogin && qr == undefined) spinOk('con-3', 'Qr success scanned!')
+        if (initial && isNewLogin && qr == undefined) {
+            spinOk('con-3', 'Qr success scanned!')
+            console.clear()
+        }
         if (initial && connection === "open") {
             spinOk('con-1', 'Analyzing success!')
             spinOk('con-2', 'Connected to server!')

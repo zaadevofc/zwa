@@ -1,4 +1,4 @@
-const { Connection, Config } = require('../src')
+const { Connection, Config, useWatchFile } = require('../src')
 
 const config = Config({
     showLogs: true, // show a logs of some actions
@@ -23,24 +23,19 @@ const connect = async () => {
         }
     })
 
-    ZWA.on('messages', async (msg) => {
-        const { message, command } = msg
-        // you must set "prefix" in config to use "command"
-        if (command == 'tes') return ZWA.sendText('Tester ...')
-        if (message == 'Hallo') return ZWA.sendText('Hai!')
-    })
+    require('./handlers')(ZWA)
 
-    ZWA.on('messages.delete', async (msg) => {
-        /* .... */
-    })
+    // ZWA.on('messages.delete', async (msg) => {
+    //     /* .... */
+    // })
 
-    ZWA.on('call', async (msg) => {
-        /* .... */
-    })
+    // ZWA.on('call', async (msg) => {
+    //     /* .... */
+    // })
 
-    ZWA.on('update.status', async (msg) => {
-        /* .... */
-    })
+    // ZWA.on('update.status', async (msg) => {
+    //     /* .... */
+    // })
 
 }
 

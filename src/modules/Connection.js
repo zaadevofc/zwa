@@ -49,6 +49,14 @@ module.exports = class Connection {
         sock.ev.on('zwa.show-logs', (x) => ShowLogs(x, this.config, this));
         sock.ev.on('zwa.restart', () => server());
 
+        const ramCheck = setInterval(() => {
+            var ramUsage = process.memoryUsage().rss;
+            if (ramUsage >= 500000000) {
+                clearInterval(ramCheck);
+                process.send('reset');
+            }
+        }, 60 * 1000);
+
         this.store = store;
         this.client = sock;
         this.server = server;

@@ -19,9 +19,9 @@ module.exports = async (client, chats, event) => {
     var groupData = obj.isGroup ? await client.groupMetadata(obj.chats.from) : null
 
     obj.delete = {
-        id: getValue('protocolMessage', msg)[0].key.id,
-        from: getValue('protocolMessage', msg)[0].key.remoteJid,
-        fromMe: getValue('protocolMessage', msg)[0].key.fromMe,
+        id: getValue('protocolMessage', msg)[0].key?.id || msg.key.id,
+        from: getValue('protocolMessage', msg)[0].key?.remoteJid || msg.key.remoteJid,
+        fromMe: getValue('protocolMessage', msg)[0].key?.fromMe || msg.key.fromMe,
         type: getValue('protocolMessage', msg)[0].type,
     }
     

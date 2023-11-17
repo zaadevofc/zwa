@@ -1,5 +1,6 @@
 module.exports = {
     Connection: require('./modules/Connection'),
     Config: require('./modules/Config'),
-    useDatabase: require('./use/Database')
+    useDatabase: require('./use/Database'),
+    useWatchFile: require('./use/WatchFile')
 }

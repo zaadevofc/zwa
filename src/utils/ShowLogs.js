@@ -43,22 +43,21 @@ module.exports = async (msg, config, module) => {
         ),
     }
 
-    if (msg.event == 'messages') {
+    if (msg.event == 'messages' && msg) {
         if (msg.isGroup && msg.isCommand && !msg.isBanned) log(tpl.group.command(msg, msg.subject))
         if (msg.isGroup && msg.isCommand && msg.isBanned) log(tpl.group.banned(msg, msg.subject))
 
         if (!msg.isGroup && msg.isCommand && !msg.isBanned) log(tpl.private.command(msg))
         if (!msg.isGroup && msg.isCommand && msg.isBanned) log(tpl.private.banned(msg))
 
-    } else if (msg.event == 'call') {
+    } else if (msg.event == 'call' && msg) {
         log(await tpl.call(msg))
 
-    } else if (msg.event == 'messages.delete') {
+    } else if (msg.event == 'messages.delete' && msg) {
         if (!msg.isGroup) log(tpl.private.delete(msg))
         if (msg.isGroup) log(tpl.group.delete(msg, msg.subject))
 
-    } else if (msg.event == 'update.status') {
+    } else if (msg.event == 'update.status' && msg) {
         log(tpl.status(msg))
-
     }
 }
